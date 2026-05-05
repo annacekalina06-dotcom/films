@@ -35,12 +35,7 @@
                     <h3>По настроению</h3>
                     <ul style="list-style-type: square;">
                         <li>Комедии</li>
-                        <li>Драмы
-                            <ul>
-                                <li>Психологические</li>
-                                <li>Мелодрамы</li>
-                            </ul>
-                        </li>
+                        <li>Драмы<ul><li>Психологические</li><li>Мелодрамы</li></ul></li>
                         <li>Хорроры</li>
                         <li>Боевики</li>
                     </ul>
@@ -58,12 +53,9 @@
                 <div class="genre-card">
                     <h3>Словарь</h3>
                     <dl>
-                        <dt>Артхаус</dt>
-                        <dd>Нестандартное кино</dd>
-                        <dt>Мейнстрим</dt>
-                        <dd>Массовое кино</dd>
-                        <dt>Инди</dt>
-                        <dd>Независимое кино</dd>
+                        <dt>Артхаус</dt><dd>Нестандартное кино</dd>
+                        <dt>Мейнстрим</dt><dd>Массовое кино</dd>
+                        <dt>Инди</dt><dd>Независимое кино</dd>
                     </dl>
                 </div>
             </div>
@@ -73,60 +65,16 @@
             <h2>Топ фильмов</h2>
             <table class="films-table">
                 <caption>Лучшие фильмы по версии зрителей</caption>
-                <thead>
-                    <tr>
-                        <th>№</th>
-                        <th>Название</th>
-                        <th>Год</th>
-                        <th>Рейтинг</th>
-                        <th>Жанр</th>
-                    </tr>
-                </thead>
+                <thead><tr><th>№</th><th>Название</th><th>Год</th><th>Рейтинг</th><th>Жанр</th></tr></thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Побег из Шоушенка</td>
-                        <td>1994</td>
-                        <td>9.3</td>
-                        <td>Драма</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Крёстный отец</td>
-                        <td>1972</td>
-                        <td>9.2</td>
-                        <td>Криминал</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Тёмный рыцарь</td>
-                        <td>2008</td>
-                        <td>9.0</td>
-                        <td>Боевик</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Криминальное чтиво</td>
-                        <td>1994</td>
-                        <td>8.9</td>
-                        <td>Криминал</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Интерстеллар</td>
-                        <td>2014</td>
-                        <td>8.7</td>
-                        <td>Фантастика</td>
-                    </tr>
-                    <tr>
-                        <td colspan="5"></td>
-                    </tr>
+                    <tr><td>1</td><td>Побег из Шоушенка</td><td>1994</td><td>9.3</td><td>Драма</td></tr>
+                    <tr><td>2</td><td>Крёстный отец</td><td>1972</td><td>9.2</td><td>Криминал</td></tr>
+                    <tr><td>3</td><td>Тёмный рыцарь</td><td>2008</td><td>9.0</td><td>Боевик</td></tr>
+                    <tr><td>4</td><td>Криминальное чтиво</td><td>1994</td><td>8.9</td><td>Криминал</td></tr>
+                    <tr><td>5</td><td>Интерстеллар</td><td>2014</td><td>8.7</td><td>Фантастика</td></tr>
+                    <tr><td colspan="5"></td></tr>
                 </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="5"></td>
-                    </tr>
-                </tfoot>
+                <tfoot><tr><td colspan="5"></td></tr></tfoot>
             </table>
         </section>
 
@@ -137,14 +85,12 @@
                     <h3>Видео</h3>
                     <video controls width="100%">
                         <source src="trailer.mp4" type="video/mp4">
-                        Ваш браузер не поддерживает видео.
                     </video>
                 </div>
                 <div class="audio-block">
                     <h3>Аудио</h3>
                     <audio controls>
                         <source src="pesnya.mp3" type="audio/mpeg">
-                        Ваш браузер не поддерживает аудио.
                     </audio>
                 </div>
             </div>
@@ -153,24 +99,24 @@
         <section id="register" class="section">
             <h2>Регистрация</h2>
             <div class="form-container">
-                <form id="profileForm" onsubmit="return handleRegister(event)">
+                <form onsubmit="return handleRegister(event)">
                     <fieldset>
                         <legend>О себе</legend>
                         <label for="username">Имя:</label>
-                        <input type="text" id="username" name="username" required placeholder="Как тебя зовут?">
+                        <input type="text" id="username" required placeholder="Как тебя зовут?">
                         <label for="email">Почта:</label>
-                        <input type="email" id="email" name="email" required placeholder="email@example.com">
+                        <input type="email" id="email" required placeholder="email@example.com">
                         <label for="password">Пароль:</label>
-                        <input type="password" id="password" name="password" required placeholder="Минимум 6 символов" pattern=".{6,}">
+                        <input type="password" id="password" required placeholder="Минимум 6 символов" pattern=".{6,}">
                     </fieldset>
                     <fieldset>
                         <legend>Любимые фильмы</legend>
                         <label for="favMovie1">Фильм 1:</label>
-                        <input type="text" id="favMovie1" name="favMovie1" placeholder="Название">
+                        <input type="text" id="favMovie1" placeholder="Название">
                         <label for="favMovie2">Фильм 2:</label>
-                        <input type="text" id="favMovie2" name="favMovie2" placeholder="Название">
+                        <input type="text" id="favMovie2" placeholder="Название">
                         <label for="favGenre">Жанр:</label>
-                        <select id="favGenre" name="favGenre">
+                        <select id="favGenre">
                             <option value="">Выберите</option>
                             <option value="drama">Драма</option>
                             <option value="comedy">Комедия</option>
@@ -182,15 +128,13 @@
                     <fieldset>
                         <legend>Соцсети</legend>
                         <label for="vk">VK:</label>
-                        <input type="text" id="vk" name="vk" placeholder="Ссылка или ник">
+                        <input type="text" id="vk" placeholder="Ссылка или ник">
                         <label for="inst">Instagram:</label>
-                        <input type="text" id="inst" name="inst" placeholder="@username">
+                        <input type="text" id="inst" placeholder="@username">
                         <label for="letterboxd">Letterboxd:</label>
-                        <input type="text" id="letterboxd" name="letterboxd" placeholder="Ссылка">
-                        <div class="checkbox-group">
-                            <input type="checkbox" id="agree" name="agree" required>
-                            <label for="agree">Я согласен на обработку данных</label>
-                        </div>
+                        <input type="text" id="letterboxd" placeholder="Ссылка">
+                        <input type="checkbox" id="agree" required>
+                        <label for="agree">Я согласен на обработку данных</label>
                     </fieldset>
                     <button type="submit" class="submit-btn">Создать профиль</button>
                 </form>
@@ -200,11 +144,10 @@
 
         <section id="calc" class="section">
             <h2>Калькулятор времени</h2>
-            <p style="text-align: center; margin-bottom: 20px;">Узнай сколько времени уходит на просмотр фильмов</p>
             <div class="calculator">
-                <label for="filmsPerWeek">Сколько фильмов смотришь в неделю:</label>
-                <input type="number" id="filmsPerWeek" placeholder="Например, 3" min="0">
-                <label for="avgDuration">Средняя длина фильма (минут):</label>
+                <label for="filmsPerWeek">Фильмов в неделю:</label>
+                <input type="number" id="filmsPerWeek" placeholder="3" min="0">
+                <label for="avgDuration">Длина (минут):</label>
                 <input type="number" id="avgDuration" placeholder="120" min="0" value="120">
                 <button onclick="calculateTime()">Посчитать</button>
                 <div id="calcResult" class="result-box"></div>
@@ -213,10 +156,7 @@
         </section>
     </main>
 
-    <footer>
-        <p>Мир кино, 2026</p>
-    </footer>
-
-    <script src="main.js"></script>
+    <footer><p>Мир кино, 2026</p></footer>
+    <script src="script.js"></script>
 </body>
 </html>
